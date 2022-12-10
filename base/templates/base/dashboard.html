@@ -1,4 +1,6 @@
-{% extends 'dashboard_structure.html'%}
-{% block title %}{{ request.user.username }}
+{#{% extends 'dashboard_structure.html'%}#}
+{{ request.user.username }}
+<a href="{% url 'logout' %}">logout</a>
+{% block title %}
 {% endblock title %}
 
